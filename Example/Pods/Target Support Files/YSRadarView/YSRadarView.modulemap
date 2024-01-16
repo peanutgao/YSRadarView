@@ -1,0 +1,6 @@
+framework module YSRadarView {
+  umbrella header "YSRadarView-umbrella.h"
+
+  export *
+  module * { export * }
+}

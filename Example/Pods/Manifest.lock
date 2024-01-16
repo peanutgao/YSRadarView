@@ -1,0 +1,16 @@
+PODS:
+  - YSRadarView (0.1.0)
+
+DEPENDENCIES:
+  - YSRadarView (from `../`)
+
+EXTERNAL SOURCES:
+  YSRadarView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YSRadarView: b68eb73c2c09893fa13d77f9e67fdf664bb61640
+
+PODFILE CHECKSUM: d43e31c5ebb6f6d38518197113afcf45c3da814e
+
+COCOAPODS: 1.14.3
