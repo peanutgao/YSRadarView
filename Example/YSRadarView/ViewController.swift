@@ -7,26 +7,23 @@
 //
 
 import UIKit
+import YSRadarView
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let scanRadar = RadarView(scanWithRadius: 100, angle: 90, radarLineNum: 4, hollowRadius: 20)
+        let scanRadar = YSRadarView(scanWithRadius: 100, angle: 90, radarLineNum: 4, hollowRadius: 20)
         scanRadar.startColor = .red
         scanRadar.endColor = .clear
         scanRadar.angle = 360
         scanRadar.radarLineNum = 0
         scanRadar.show(targetView: self.view)
         scanRadar.startAnimation()
-
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }
-

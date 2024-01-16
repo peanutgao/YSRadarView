@@ -9,17 +9,14 @@
 
 import UIKit
 
+// MARK: - YSRadarView
 
-// MARK: - RadarViewType
+public class YSRadarView: UIView {
+    public enum RadarViewType {
+        case scan
+        case diffuse
+    }
 
-enum RadarViewType {
-    case scan
-    case diffuse
-}
-
-// MARK: - RadarView
-
-class RadarView: UIView {
     public var radarLineColor: UIColor?
     public var startColor: UIColor?
     public var endColor: UIColor?
@@ -36,8 +33,7 @@ class RadarView: UIView {
     public var timer: Timer?
     public var radarViewType: RadarViewType = .scan
 
-
-    init(scanWithRadius radius: CGFloat, angle: Int, radarLineNum: Int, hollowRadius: CGFloat) {
+    public init(scanWithRadius radius: CGFloat, angle: Int, radarLineNum: Int, hollowRadius: CGFloat) {
         super.init(frame: CGRect(x: 0, y: 0, width: radius * 2, height: radius * 2))
         self.radarViewType = .scan
         self.sectorRadius = radius
@@ -47,7 +43,7 @@ class RadarView: UIView {
         self.backgroundColor = UIColor.clear
     }
 
-    init(diffuseWithStartRadius startRadius: CGFloat, endRadius: CGFloat, circleColor: UIColor) {
+    public init(diffuseWithStartRadius startRadius: CGFloat, endRadius: CGFloat, circleColor: UIColor) {
         super.init(frame: CGRect(x: 0, y: 0, width: endRadius * 2, height: endRadius * 2))
         self.radarViewType = .diffuse
         self.startRadius = startRadius
@@ -55,30 +51,6 @@ class RadarView: UIView {
         self.circleColor = circleColor
         self.backgroundColor = UIColor.clear
     }
-
-    override func draw(_: CGRect) {
-        if radarViewType == .scan {
-            if startColor == nil {
-                startColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.5)
-            }
-            if endColor == nil {
-                endColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0)
-            }
-            if radarLineColor == nil {
-                radarLineColor = UIColor(white: 1, alpha: 0.7)
-            }
-
-            drawRadarLine()
-
-            if let context = UIGraphicsGetCurrentContext() {
-                for i in 0 ..< angle {
-                    let color = colorWithCurrentAngleProportion(angleProportion: CGFloat(i) / CGFloat(angle))
-                    drawSector(context: context, color: color, startAngle: CGFloat(-90 - i))
-                }
-            }
-        }
-    }
-
 
     public func show(targetView: UIView) {
         center = targetView.center
@@ -100,11 +72,11 @@ class RadarView: UIView {
         } else {
             diffuseAnimation()
             timer = Timer.scheduledTimer(
-                    timeInterval: 0.5,
-                    target: self,
-                    selector: #selector(diffuseAnimation),
-                    userInfo: nil,
-                    repeats: true
+                timeInterval: 0.5,
+                target: self,
+                selector: #selector(diffuseAnimation),
+                userInfo: nil,
+                repeats: true
             )
         }
     }
@@ -118,6 +90,36 @@ class RadarView: UIView {
         }
     }
 
+    @available(*, unavailable)
+    required init?(coder _: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    override public func draw(_: CGRect) {
+        if radarViewType == .scan {
+            if startColor == nil {
+                startColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.5)
+            }
+            if endColor == nil {
+                endColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0)
+            }
+            if radarLineColor == nil {
+                radarLineColor = UIColor(white: 1, alpha: 0.7)
+            }
+
+            drawRadarLine()
+
+            if let context = UIGraphicsGetCurrentContext() {
+                for i in 0 ..< angle {
+                    let color = colorWithCurrentAngleProportion(angleProportion: CGFloat(i) / CGFloat(angle))
+                    drawSector(context: context, color: color, startAngle: CGFloat(-90 - i))
+                }
+            }
+        }
+    }
+}
+
+private extension YSRadarView {
     @objc func diffuseAnimation() {
         let imgView = UIImageView()
         if let circleImage = drawCircle() {
@@ -136,14 +138,68 @@ class RadarView: UIView {
         }
     }
 
-    @available(*, unavailable)
-    required init?(coder _: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    func drawCircle() -> UIImage? {
+        UIGraphicsBeginImageContext(CGSize(width: endRadius * 2, height: endRadius * 2))
+        if let context = UIGraphicsGetCurrentContext() {
+            context.move(to: CGPoint(x: bounds.width * 0.5, y: bounds.height * 0.5))
+            context.setFillColor(circleColor?.cgColor ?? UIColor.clear.cgColor)
+            context.addArc(
+                center: CGPoint(x: bounds.width * 0.5, y: bounds.height * 0.5),
+                radius: endRadius,
+                startAngle: 0,
+                endAngle: -2 * .pi,
+                clockwise: true
+            )
+            context.fillPath()
+        }
+        let img = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return img
+    }
+
+    func drawSector(context: CGContext, color: UIColor, startAngle: CGFloat) {
+        context.setFillColor(color.cgColor)
+        context.setLineWidth(0)
+        context.move(to: CGPoint(x: bounds.width * 0.5, y: bounds.height * 0.5))
+        context.addArc(
+            center: CGPoint(x: bounds.width * 0.5, y: bounds.height * 0.5),
+            radius: sectorRadius,
+            startAngle: startAngle * .pi / 180,
+            endAngle: (startAngle - 1) * .pi / 180,
+            clockwise: true
+        )
+        context.closePath()
+        context.drawPath(using: .fillStroke)
+    }
+
+    func drawRadarLine() {
+        let minRadius = (sectorRadius - CGFloat(hollowRadius)) * pow(0.618, Double(radarLineNum - 1))
+
+        drawLine(radius: CGFloat(hollowRadius) + minRadius * 0.382)
+
+        for i in 0 ..< radarLineNum {
+            drawLine(radius: CGFloat(hollowRadius) + minRadius / pow(0.618, Double(i)))
+        }
+    }
+
+    func drawLine(radius: CGFloat) {
+        let solidLine = CAShapeLayer()
+        let solidPath = CGMutablePath()
+        solidLine.lineWidth = 1.0
+        solidLine.strokeColor = radarLineColor?.cgColor
+        solidLine.fillColor = UIColor.clear.cgColor
+        solidPath.addEllipse(in: CGRect(
+            x: bounds.width * 0.5 - radius,
+            y: bounds.height * 0.5 - radius,
+            width: radius * 2,
+            height: radius * 2
+        ))
+        solidLine.path = solidPath
+        layer.addSublayer(solidLine)
     }
 }
 
-private extension RadarView {
-
+extension YSRadarView {
     func colorWithCurrentAngleProportion(angleProportion: CGFloat) -> UIColor {
         guard let startColor, let endColor else {
             return UIColor.black
@@ -168,65 +224,5 @@ private extension RadarView {
         let currentAlpha = startAlpha + (endAlpha - startAlpha) * angleProportion
 
         return UIColor(red: currentRed, green: currentGreen, blue: currentBlue, alpha: currentAlpha)
-    }
-
-    func drawCircle() -> UIImage? {
-        UIGraphicsBeginImageContext(CGSize(width: endRadius * 2, height: endRadius * 2))
-        if let context = UIGraphicsGetCurrentContext() {
-            context.move(to: CGPoint(x: bounds.width * 0.5, y: bounds.height * 0.5))
-            context.setFillColor(circleColor?.cgColor ?? UIColor.clear.cgColor)
-            context.addArc(
-                    center: CGPoint(x: bounds.width * 0.5, y: bounds.height * 0.5),
-                    radius: endRadius,
-                    startAngle: 0,
-                    endAngle: -2 * .pi,
-                    clockwise: true
-            )
-            context.fillPath()
-        }
-        let img = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return img
-    }
-
-    func drawSector(context: CGContext, color: UIColor, startAngle: CGFloat) {
-        context.setFillColor(color.cgColor)
-        context.setLineWidth(0)
-        context.move(to: CGPoint(x: bounds.width * 0.5, y: bounds.height * 0.5))
-        context.addArc(
-                center: CGPoint(x: bounds.width * 0.5, y: bounds.height * 0.5),
-                radius: sectorRadius,
-                startAngle: startAngle * .pi / 180,
-                endAngle: (startAngle - 1) * .pi / 180,
-                clockwise: true
-        )
-        context.closePath()
-        context.drawPath(using: .fillStroke)
-    }
-
-    func drawRadarLine() {
-        let minRadius = (sectorRadius - CGFloat(hollowRadius)) * pow(0.618, Double(radarLineNum - 1))
-
-        drawLine(radius: CGFloat(hollowRadius) + minRadius * 0.382)
-
-        for i in 0 ..< radarLineNum {
-            drawLine(radius: CGFloat(hollowRadius) + minRadius / pow(0.618, Double(i)))
-        }
-    }
-
-    func drawLine(radius: CGFloat) {
-        let solidLine = CAShapeLayer()
-        let solidPath = CGMutablePath()
-        solidLine.lineWidth = 1.0
-        solidLine.strokeColor = radarLineColor?.cgColor
-        solidLine.fillColor = UIColor.clear.cgColor
-        solidPath.addEllipse(in: CGRect(
-                x: bounds.width * 0.5 - radius,
-                y: bounds.height * 0.5 - radius,
-                width: radius * 2,
-                height: radius * 2
-        ))
-        solidLine.path = solidPath
-        layer.addSublayer(solidLine)
     }
 }
