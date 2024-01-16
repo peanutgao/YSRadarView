@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		0538B63B30604CBEE67B61A3 /* Pods_YSRadarView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YSRadarView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1842CEB5E2A755DFC2803AEE /* Pods-YSRadarView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSRadarView_Example.debug.xcconfig"; path = "Target Support Files/Pods-YSRadarView_Example/Pods-YSRadarView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2884498172EB99CC253E941F /* YSRadarView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YSRadarView.podspec; path = ../YSRadarView.podspec; sourceTree = "<group>"; };
+		2884498172EB99CC253E941F /* YSRadarView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YSRadarView.podspec; path = ../YSRadarView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* YSRadarView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSRadarView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,9 +43,9 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		78AAA4D69AEEA1263E962F85 /* Pods_YSRadarView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YSRadarView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3D21F1C78DF6F38D1F4E285 /* Pods-YSRadarView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSRadarView_Example.release.xcconfig"; path = "Target Support Files/Pods-YSRadarView_Example/Pods-YSRadarView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		BA67C3FFB44718B4003F51E0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BA67C3FFB44718B4003F51E0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C3E2D8943969964DEBBA20DA /* Pods-YSRadarView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSRadarView_Tests.release.xcconfig"; path = "Target Support Files/Pods-YSRadarView_Tests/Pods-YSRadarView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E4BA91CA66A3AC242AD15325 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E4BA91CA66A3AC242AD15325 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E4E7608EBFC056D2FDD7F73E /* Pods-YSRadarView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSRadarView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YSRadarView_Tests/Pods-YSRadarView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,7 +156,6 @@
 				E4E7608EBFC056D2FDD7F73E /* Pods-YSRadarView_Tests.debug.xcconfig */,
 				C3E2D8943969964DEBBA20DA /* Pods-YSRadarView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
