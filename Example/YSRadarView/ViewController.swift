@@ -14,11 +14,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         let scanRadar = YSRadarView(scanWithRadius: 100, angle: 90, radarLineNum: 4, hollowRadius: 20)
-        scanRadar.startColor = .red
-        scanRadar.endColor = .clear
+        scanRadar.startColor = UIColor(red: 0.06, green: 0.44, blue: 0.95, alpha: 0.1)
+        scanRadar.endColor = UIColor(white: 1, alpha: 0.5)
         scanRadar.angle = 360
         scanRadar.radarLineNum = 0
-        scanRadar.show(targetView: self.view)
+        view.addSubview(scanRadar)
         scanRadar.startAnimation()
     }
 

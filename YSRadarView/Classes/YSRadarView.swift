@@ -52,11 +52,6 @@ public class YSRadarView: UIView {
         self.backgroundColor = UIColor.clear
     }
 
-    public func show(targetView: UIView) {
-        center = targetView.center
-        targetView.addSubview(self)
-    }
-
     public func dismiss() {
         removeFromSuperview()
     }
@@ -68,6 +63,7 @@ public class YSRadarView: UIView {
             rotationAnimation.duration = 2
             rotationAnimation.isCumulative = true
             rotationAnimation.repeatCount = .greatestFiniteMagnitude
+            rotationAnimation.isRemovedOnCompletion = false
             layer.add(rotationAnimation, forKey: "rotationAnimation")
         } else {
             diffuseAnimation()
@@ -173,12 +169,15 @@ private extension YSRadarView {
     }
 
     func drawRadarLine() {
-        let minRadius = (sectorRadius - CGFloat(hollowRadius)) * pow(0.618, Double(radarLineNum - 1))
-
+        let minRadius = (sectorRadius - CGFloat(hollowRadius)) * pow(0.618, CGFloat(radarLineNum - 1))
         drawLine(radius: CGFloat(hollowRadius) + minRadius * 0.382)
-
-        for i in 0 ..< radarLineNum {
-            drawLine(radius: CGFloat(hollowRadius) + minRadius / pow(0.618, Double(i)))
+        if radarLineNum > 0 {
+            for i in 0 ..< radarLineNum {
+                let currentRadius = CGFloat(hollowRadius) + minRadius / pow(0.618, CGFloat(i))
+                drawLine(radius: currentRadius)
+            }
+        } else {
+            print("Error: radarLineNum must be at least 1")
         }
     }
 
