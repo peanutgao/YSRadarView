@@ -33,9 +33,9 @@ Simple Radar view
 
   s.source_files = 'YSRadarView/Classes/**/*'
   
-   s.resource_bundles = {
-     'YSRadarView' => ['YSRadarView/PrivacyInfo.xcprivacy']
-   }
+  s.resource_bundles = {
+    'YSRadarView' => ['YSRadarView/PrivacyInfo.xcprivacy']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
