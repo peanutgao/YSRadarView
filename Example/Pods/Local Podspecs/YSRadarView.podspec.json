@@ -1,27 +1,29 @@
 {
   "name": "YSRadarView",
   "version": "0.1.0",
-  "summary": "A Radar view.",
-  "description": "Radar view",
-  "homepage": "https://github.com/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/YSRadarView",
+  "summary": "Simple Radar view.",
+  "description": "Simple Radar view",
+  "homepage": "https://github.com/peanutgao/YSRadarView",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "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": "Joseph0750@gmail.com"
+    "Peanutgao": "Joseph0750@gmail.com"
   },
   "source": {
-    "git": "https://github.com/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/YSRadarView.git",
+    "git": "https://github.com/peanutgao/YSRadarView.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "12.0"
   },
+  "swift_versions": "5.0",
   "source_files": "YSRadarView/Classes/**/*",
   "resource_bundles": {
     "YSRadarView": [
       "YSRadarView/PrivacyInfo.xcprivacy"
     ]
-  }
+  },
+  "swift_version": "5.0"
 }

@@ -535,6 +535,39 @@
 			};
 			name = Debug;
 		};
+		41459DBFC5E968514DEA80361E16BEC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BA82F1E21F6CDC5C32F1A63D1691AA4 /* YSRadarView.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YSRadarView/YSRadarView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YSRadarView/YSRadarView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YSRadarView/YSRadarView.modulemap";
+				PRODUCT_MODULE_NAME = YSRadarView;
+				PRODUCT_NAME = YSRadarView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -683,39 +716,6 @@
 			};
 			name = Release;
 		};
-		7CEBF0DF499E26EE111109902B95AC85 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5BA82F1E21F6CDC5C32F1A63D1691AA4 /* YSRadarView.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YSRadarView/YSRadarView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YSRadarView/YSRadarView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YSRadarView/YSRadarView.modulemap";
-				PRODUCT_MODULE_NAME = YSRadarView;
-				PRODUCT_NAME = YSRadarView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		A3231826D9379183C0C70EE29FD7CB91 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A4DBEF20DA0E2787B46CD183A4F99775 /* Pods-YSRadarView_Example.debug.xcconfig */;
@@ -750,7 +750,7 @@
 			};
 			name = Debug;
 		};
-		B4A2262ECB26DE431AC1DDEC562B6229 /* Debug */ = {
+		A9141013350D76D1E702A16F065766FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3146B540E0AC0EA62F706AAE97E845F0 /* YSRadarView.debug.xcconfig */;
 			buildSettings = {
@@ -775,7 +775,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -876,8 +876,8 @@
 		81455B93648C11098571654311D1B61A /* Build configuration list for PBXNativeTarget "YSRadarView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B4A2262ECB26DE431AC1DDEC562B6229 /* Debug */,
-				7CEBF0DF499E26EE111109902B95AC85 /* Release */,
+				A9141013350D76D1E702A16F065766FE /* Debug */,
+				41459DBFC5E968514DEA80361E16BEC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
