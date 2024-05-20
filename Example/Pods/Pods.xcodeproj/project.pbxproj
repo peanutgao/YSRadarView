@@ -7,68 +7,80 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CA7D35DA385460CC6BBB063F5F05B63 /* YSRadarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A533CCBC90E7EC0DE928CC6D6A415DE /* YSRadarView.swift */; };
 		11151207064563C5F1919C82064D6352 /* Pods-YSRadarView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD85E38A93C1416EB806483EE6979BD /* Pods-YSRadarView_Tests-dummy.m */; };
+		14B1207B96584BFA9B9BEE75321A194F /* YSRadarView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C700DB0EC6DFE828120E8F622FF481 /* YSRadarView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2123E2E310A339A53124F2599F2F1EA7 /* YSRadarView-YSRadarView in Resources */ = {isa = PBXBuildFile; fileRef = 657CA4E5DBF1C10F863A165C2A907342 /* YSRadarView-YSRadarView */; };
 		2800E4942783F8B99FD061672BDB63DF /* Pods-YSRadarView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7891F8E30AA816F10CC545E21ADBA5 /* Pods-YSRadarView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2A67C915763C0B39CBBA0E08D400D42A /* YSRadarView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 563ED5571BC1C13FCA50061CC7E14A02 /* YSRadarView-dummy.m */; };
 		2F5E1272E1B0886AABF0F27E6B8569E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		4E87D45265B3090242EF88C2E32438B6 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 0BB9880E9D8EBEA453185C7F448D9FAC /* PrivacyInfo.xcprivacy */; };
 		5F0FEE1FD0285D20EDF08226BCC379C4 /* Pods-YSRadarView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E1282A8FACD885844AF8DA48D898FB /* Pods-YSRadarView_Example-dummy.m */; };
-		69EAF10FD6193F2D5A208136DD452D0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		6E1D875E71762786B704002F794001DF /* YSRadarView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 806F55115662FC100CDB54E590152F09 /* YSRadarView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76F838E6232B8AF7F25DF2287091D5C1 /* YSRadarView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BEB54AE8182518FBEBC06C297706F1 /* YSRadarView-dummy.m */; };
 		7F3E0C7DB62176606A89D9CC300EE307 /* Pods-YSRadarView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C24CE4069CFC191250DAD8A58FEF49B /* Pods-YSRadarView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8852D81F44DBE2AF0F4115D3EACE0643 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		B95102B8400D1CBB1B6067B9C87231DB /* YSRadarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D69040AEA6EA7BA60FFAF310DD8C5 /* YSRadarView.swift */; };
+		9284AF9CAB70B11408501F508A66C35A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		48B79A650863290E69BAD4DEAD0DEE64 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F65CCF71966C804C1AA73D26DF053444;
-			remoteInfo = "Pods-YSRadarView_Example";
-		};
-		7519A0175498D8A2A08553F636CE0C05 /* PBXContainerItemProxy */ = {
+		00737D950F38E6E4FE12E278B1356E4F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6A1F5AAC468486ADE0883C0B3CF998B2;
 			remoteInfo = YSRadarView;
 		};
+		5E9603B890E0782295C76CB30E051F4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F65CCF71966C804C1AA73D26DF053444;
+			remoteInfo = "Pods-YSRadarView_Example";
+		};
+		7D5CED136FAE6AF2DA0503896004BC9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F38B2DBE44578BB40AB0C612DE20F941;
+			remoteInfo = "YSRadarView-YSRadarView";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		06141A6B21B1F4DBCE8B233961109595 /* Pods-YSRadarView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YSRadarView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		07E1282A8FACD885844AF8DA48D898FB /* Pods-YSRadarView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YSRadarView_Example-dummy.m"; sourceTree = "<group>"; };
-		1B3F0FD220A22F321E0E8551A9898601 /* YSRadarView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = YSRadarView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0A533CCBC90E7EC0DE928CC6D6A415DE /* YSRadarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YSRadarView.swift; path = YSRadarView/Classes/YSRadarView.swift; sourceTree = "<group>"; };
+		0BB9880E9D8EBEA453185C7F448D9FAC /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = YSRadarView/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		1FD85E38A93C1416EB806483EE6979BD /* Pods-YSRadarView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YSRadarView_Tests-dummy.m"; sourceTree = "<group>"; };
 		23A67465A3DF432FB54EBDA64F55BDC2 /* Pods-YSRadarView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YSRadarView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2A20836666EE3974931F1A8E695F29DA /* Pods-YSRadarView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YSRadarView_Example.modulemap"; sourceTree = "<group>"; };
 		2A7891F8E30AA816F10CC545E21ADBA5 /* Pods-YSRadarView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YSRadarView_Tests-umbrella.h"; sourceTree = "<group>"; };
-		34921DCB75B4A7C83AFF5BAA0AE3B083 /* YSRadarView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YSRadarView.release.xcconfig; sourceTree = "<group>"; };
-		367CA91B54FCD5A0508EFFA0BA0BB843 /* YSRadarView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YSRadarView-prefix.pch"; sourceTree = "<group>"; };
+		2E701928EF561F5F1A9B2C9FD3EA760F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3146B540E0AC0EA62F706AAE97E845F0 /* YSRadarView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YSRadarView.debug.xcconfig; sourceTree = "<group>"; };
 		3C24CE4069CFC191250DAD8A58FEF49B /* Pods-YSRadarView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YSRadarView_Example-umbrella.h"; sourceTree = "<group>"; };
-		3E5C95E7A1577F1480FD08FEA2365BA8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		54503F8FB5FFC3F441299BB576EF9337 /* YSRadarView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YSRadarView.modulemap; sourceTree = "<group>"; };
-		55862A6CAC2CF531BA699572A0A86031 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		563ED5571BC1C13FCA50061CC7E14A02 /* YSRadarView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YSRadarView-dummy.m"; sourceTree = "<group>"; };
-		5B0814FB4FFC31FB0BE653C749AE77E6 /* YSRadarView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YSRadarView.debug.xcconfig; sourceTree = "<group>"; };
+		50BEB54AE8182518FBEBC06C297706F1 /* YSRadarView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YSRadarView-dummy.m"; sourceTree = "<group>"; };
+		5BA82F1E21F6CDC5C32F1A63D1691AA4 /* YSRadarView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YSRadarView.release.xcconfig; sourceTree = "<group>"; };
 		5E28C7343AB43460F28A823193D06154 /* Pods-YSRadarView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YSRadarView_Example-Info.plist"; sourceTree = "<group>"; };
+		657CA4E5DBF1C10F863A165C2A907342 /* YSRadarView-YSRadarView */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "YSRadarView-YSRadarView"; path = YSRadarView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		671A70930896EDC5D22772F0D532F723 /* YSRadarView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = YSRadarView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		684FE9B24CB26D8B508AE0E097918E07 /* Pods-YSRadarView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YSRadarView_Tests.modulemap"; sourceTree = "<group>"; };
 		69F56AFA79D1931EC75C98AE63C0FE98 /* Pods-YSRadarView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YSRadarView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6D2277E2804AE67550CAA19B64DFF4EA /* Pods-YSRadarView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YSRadarView_Tests-Info.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		77FCCC4203263616D1138F9C4EFCC297 /* Pods-YSRadarView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YSRadarView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		806F55115662FC100CDB54E590152F09 /* YSRadarView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YSRadarView-umbrella.h"; sourceTree = "<group>"; };
 		80F0B6E9D8FD372D79D7100C0BE122E2 /* Pods-YSRadarView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YSRadarView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		84C66294A8D9DA14BB3B725C3B8C248F /* Pods-YSRadarView_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-YSRadarView_Example"; path = Pods_YSRadarView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86544247886BE914C1DBABB5CFB3DCAE /* YSRadarView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YSRadarView-Info.plist"; sourceTree = "<group>"; };
 		8E93B92E04800454139F3C0B85304170 /* YSRadarView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YSRadarView; path = YSRadarView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FB699183140EF7917943012C19B4BF9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		A4DBEF20DA0E2787B46CD183A4F99775 /* Pods-YSRadarView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YSRadarView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AFEF66E0C2558218C920CEB6CDBAADB8 /* Pods-YSRadarView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YSRadarView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B5EE281D30792F0CEBA7C36B45988A3F /* Pods-YSRadarView_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-YSRadarView_Tests"; path = Pods_YSRadarView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB0D69040AEA6EA7BA60FFAF310DD8C5 /* YSRadarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YSRadarView.swift; path = YSRadarView/Classes/YSRadarView.swift; sourceTree = "<group>"; };
+		BEABFEDAC0D995730CE38DECD1B04BFD /* YSRadarView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YSRadarView.modulemap; sourceTree = "<group>"; };
+		C3FD7DAAE7DB038BB93A963A05261C39 /* ResourceBundle-YSRadarView-YSRadarView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-YSRadarView-YSRadarView-Info.plist"; sourceTree = "<group>"; };
+		CC896A828539668D3C58999349A527D3 /* YSRadarView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YSRadarView-prefix.pch"; sourceTree = "<group>"; };
+		E1C700DB0EC6DFE828120E8F622FF481 /* YSRadarView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YSRadarView-umbrella.h"; sourceTree = "<group>"; };
 		ED9834F8450F864D07A5234A7706FFE5 /* Pods-YSRadarView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YSRadarView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		FA95DC312AE1FD952888C6076A23305F /* YSRadarView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YSRadarView-Info.plist"; sourceTree = "<group>"; };
 		FFAF4A84E645DC3525A1E5BD12672327 /* Pods-YSRadarView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YSRadarView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,35 +101,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C80B698B7198EE07FF31559D94385CF7 /* Frameworks */ = {
+		A78F72CAB0CDEAF22CCE1ADC622DBA6E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69EAF10FD6193F2D5A208136DD452D0A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D703F5DCB05A7383508274C7D36E2A80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9284AF9CAB70B11408501F508A66C35A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0686E9883C2A0945AA48CBA60CAA63C5 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4BBABE9A0C27544971478F5FE829C39E /* YSRadarView */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		0E02BD33F820F33209B3FCD5F72D712B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				84C66294A8D9DA14BB3B725C3B8C248F /* Pods-YSRadarView_Example */,
-				B5EE281D30792F0CEBA7C36B45988A3F /* Pods-YSRadarView_Tests */,
-				8E93B92E04800454139F3C0B85304170 /* YSRadarView */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		0E3E0EF9605240182B0A39C247EBB6CC /* Pods-YSRadarView_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,38 +136,20 @@
 			path = "Target Support Files/Pods-YSRadarView_Example";
 			sourceTree = "<group>";
 		};
-		4A1138E8BD55B72209D2A24CAE7CC1EE /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				54503F8FB5FFC3F441299BB576EF9337 /* YSRadarView.modulemap */,
-				563ED5571BC1C13FCA50061CC7E14A02 /* YSRadarView-dummy.m */,
-				FA95DC312AE1FD952888C6076A23305F /* YSRadarView-Info.plist */,
-				367CA91B54FCD5A0508EFFA0BA0BB843 /* YSRadarView-prefix.pch */,
-				806F55115662FC100CDB54E590152F09 /* YSRadarView-umbrella.h */,
-				5B0814FB4FFC31FB0BE653C749AE77E6 /* YSRadarView.debug.xcconfig */,
-				34921DCB75B4A7C83AFF5BAA0AE3B083 /* YSRadarView.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/YSRadarView";
-			sourceTree = "<group>";
-		};
-		4BBABE9A0C27544971478F5FE829C39E /* YSRadarView */ = {
-			isa = PBXGroup;
-			children = (
-				EB0D69040AEA6EA7BA60FFAF310DD8C5 /* YSRadarView.swift */,
-				8F390DD28092DC37EEC0D4B4B7347675 /* Pod */,
-				4A1138E8BD55B72209D2A24CAE7CC1EE /* Support Files */,
-			);
-			name = YSRadarView;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		6F59D4DB91CFED765C62D5F1B22E6FF7 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC12BD0C465BFBDAEBC87E6BC8A71C38 /* YSRadarView */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		78B879BB90BB4BB628E1F39BF7A10998 /* Pods-YSRadarView_Tests */ = {
@@ -185,23 +168,62 @@
 			path = "Target Support Files/Pods-YSRadarView_Tests";
 			sourceTree = "<group>";
 		};
-		8F390DD28092DC37EEC0D4B4B7347675 /* Pod */ = {
+		A9D2D29A45821420FA33CC9A4313F1F3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				55862A6CAC2CF531BA699572A0A86031 /* LICENSE */,
-				3E5C95E7A1577F1480FD08FEA2365BA8 /* README.md */,
-				1B3F0FD220A22F321E0E8551A9898601 /* YSRadarView.podspec */,
+				84C66294A8D9DA14BB3B725C3B8C248F /* Pods-YSRadarView_Example */,
+				B5EE281D30792F0CEBA7C36B45988A3F /* Pods-YSRadarView_Tests */,
+				8E93B92E04800454139F3C0B85304170 /* YSRadarView */,
+				657CA4E5DBF1C10F863A165C2A907342 /* YSRadarView-YSRadarView */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B52973379DC8488F735E0B544F9E96FA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3FD7DAAE7DB038BB93A963A05261C39 /* ResourceBundle-YSRadarView-YSRadarView-Info.plist */,
+				BEABFEDAC0D995730CE38DECD1B04BFD /* YSRadarView.modulemap */,
+				50BEB54AE8182518FBEBC06C297706F1 /* YSRadarView-dummy.m */,
+				86544247886BE914C1DBABB5CFB3DCAE /* YSRadarView-Info.plist */,
+				CC896A828539668D3C58999349A527D3 /* YSRadarView-prefix.pch */,
+				E1C700DB0EC6DFE828120E8F622FF481 /* YSRadarView-umbrella.h */,
+				3146B540E0AC0EA62F706AAE97E845F0 /* YSRadarView.debug.xcconfig */,
+				5BA82F1E21F6CDC5C32F1A63D1691AA4 /* YSRadarView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/YSRadarView";
+			sourceTree = "<group>";
+		};
+		B73251ED430F12B1284006BF45564A9B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				2E701928EF561F5F1A9B2C9FD3EA760F /* LICENSE */,
+				9FB699183140EF7917943012C19B4BF9 /* README.md */,
+				671A70930896EDC5D22772F0D532F723 /* YSRadarView.podspec */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		CC12BD0C465BFBDAEBC87E6BC8A71C38 /* YSRadarView */ = {
+			isa = PBXGroup;
+			children = (
+				0BB9880E9D8EBEA453185C7F448D9FAC /* PrivacyInfo.xcprivacy */,
+				0A533CCBC90E7EC0DE928CC6D6A415DE /* YSRadarView.swift */,
+				B73251ED430F12B1284006BF45564A9B /* Pod */,
+				B52973379DC8488F735E0B544F9E96FA /* Support Files */,
+			);
+			name = YSRadarView;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				0686E9883C2A0945AA48CBA60CAA63C5 /* Development Pods */,
+				6F59D4DB91CFED765C62D5F1B22E6FF7 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				0E02BD33F820F33209B3FCD5F72D712B /* Products */,
+				A9D2D29A45821420FA33CC9A4313F1F3 /* Products */,
 				E695578A52CF0DAD739558821601ACA5 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -226,11 +248,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A85F393F707BC6F41B213F27C4281CA7 /* Headers */ = {
+		720C7C157FF202673106F6E29DB11C51 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E1D875E71762786B704002F794001DF /* YSRadarView-umbrella.h in Headers */,
+				14B1207B96584BFA9B9BEE75321A194F /* YSRadarView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +287,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				9C2BF0B735FA54831A3A23ED745E69E7 /* PBXTargetDependency */,
+				698C1C41486497F21672B0546363F2E7 /* PBXTargetDependency */,
 			);
 			name = "Pods-YSRadarView_Tests";
 			productName = Pods_YSRadarView_Tests;
@@ -274,21 +296,39 @@
 		};
 		6A1F5AAC468486ADE0883C0B3CF998B2 /* YSRadarView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 81FD137FA76E981FBE0367300EA8E7FF /* Build configuration list for PBXNativeTarget "YSRadarView" */;
+			buildConfigurationList = 81455B93648C11098571654311D1B61A /* Build configuration list for PBXNativeTarget "YSRadarView" */;
 			buildPhases = (
-				A85F393F707BC6F41B213F27C4281CA7 /* Headers */,
-				98F7DAFFE2D7219A5828A5AD1F1AF5D9 /* Sources */,
-				C80B698B7198EE07FF31559D94385CF7 /* Frameworks */,
-				F334F250C6A862FCEF37F09B09F46B2D /* Resources */,
+				720C7C157FF202673106F6E29DB11C51 /* Headers */,
+				E81ACEA2605566D3F793F766EBC04D2E /* Sources */,
+				D703F5DCB05A7383508274C7D36E2A80 /* Frameworks */,
+				1D1DBF115D243A834CA58609E949BA22 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D58B2E0AE8C3E48532F6F4270CF97C3C /* PBXTargetDependency */,
 			);
 			name = YSRadarView;
 			productName = YSRadarView;
 			productReference = 8E93B92E04800454139F3C0B85304170 /* YSRadarView */;
 			productType = "com.apple.product-type.framework";
+		};
+		F38B2DBE44578BB40AB0C612DE20F941 /* YSRadarView-YSRadarView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57EC645783EA26CE003FFE9D0F390F96 /* Build configuration list for PBXNativeTarget "YSRadarView-YSRadarView" */;
+			buildPhases = (
+				AFF0EC9560C7D2D30987B31747151714 /* Sources */,
+				A78F72CAB0CDEAF22CCE1ADC622DBA6E /* Frameworks */,
+				205B17E3E4D615B90D65A0E398E20B14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YSRadarView-YSRadarView";
+			productName = YSRadarView;
+			productReference = 657CA4E5DBF1C10F863A165C2A907342 /* YSRadarView-YSRadarView */;
+			productType = "com.apple.product-type.bundle";
 		};
 		F65CCF71966C804C1AA73D26DF053444 /* Pods-YSRadarView_Example */ = {
 			isa = PBXNativeTarget;
@@ -302,7 +342,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				208218B00D0E2E0E4F814340212C9413 /* PBXTargetDependency */,
+				4C17492529C0B69101CB7424D2E42F93 /* PBXTargetDependency */,
 			);
 			name = "Pods-YSRadarView_Example";
 			productName = Pods_YSRadarView_Example;
@@ -327,18 +367,35 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 0E02BD33F820F33209B3FCD5F72D712B /* Products */;
+			productRefGroup = A9D2D29A45821420FA33CC9A4313F1F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				F65CCF71966C804C1AA73D26DF053444 /* Pods-YSRadarView_Example */,
 				3B9CD333AE00AE7935F50467C3342EAB /* Pods-YSRadarView_Tests */,
 				6A1F5AAC468486ADE0883C0B3CF998B2 /* YSRadarView */,
+				F38B2DBE44578BB40AB0C612DE20F941 /* YSRadarView-YSRadarView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1D1DBF115D243A834CA58609E949BA22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2123E2E310A339A53124F2599F2F1EA7 /* YSRadarView-YSRadarView in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		205B17E3E4D615B90D65A0E398E20B14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E87D45265B3090242EF88C2E32438B6 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		47F9226DC717C4F5393E0B50D90874A5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -347,13 +404,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A8F2F10370D41B38EA3697E4137A88FA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F334F250C6A862FCEF37F09B09F46B2D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -379,66 +429,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98F7DAFFE2D7219A5828A5AD1F1AF5D9 /* Sources */ = {
+		AFF0EC9560C7D2D30987B31747151714 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B95102B8400D1CBB1B6067B9C87231DB /* YSRadarView.swift in Sources */,
-				2A67C915763C0B39CBBA0E08D400D42A /* YSRadarView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81ACEA2605566D3F793F766EBC04D2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CA7D35DA385460CC6BBB063F5F05B63 /* YSRadarView.swift in Sources */,
+				76F838E6232B8AF7F25DF2287091D5C1 /* YSRadarView-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		208218B00D0E2E0E4F814340212C9413 /* PBXTargetDependency */ = {
+		4C17492529C0B69101CB7424D2E42F93 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = YSRadarView;
 			target = 6A1F5AAC468486ADE0883C0B3CF998B2 /* YSRadarView */;
-			targetProxy = 7519A0175498D8A2A08553F636CE0C05 /* PBXContainerItemProxy */;
+			targetProxy = 00737D950F38E6E4FE12E278B1356E4F /* PBXContainerItemProxy */;
 		};
-		9C2BF0B735FA54831A3A23ED745E69E7 /* PBXTargetDependency */ = {
+		698C1C41486497F21672B0546363F2E7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-YSRadarView_Example";
 			target = F65CCF71966C804C1AA73D26DF053444 /* Pods-YSRadarView_Example */;
-			targetProxy = 48B79A650863290E69BAD4DEAD0DEE64 /* PBXContainerItemProxy */;
+			targetProxy = 5E9603B890E0782295C76CB30E051F4F /* PBXContainerItemProxy */;
+		};
+		D58B2E0AE8C3E48532F6F4270CF97C3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "YSRadarView-YSRadarView";
+			target = F38B2DBE44578BB40AB0C612DE20F941 /* YSRadarView-YSRadarView */;
+			targetProxy = 7D5CED136FAE6AF2DA0503896004BC9E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1480A4AB6AA0E2EAC7127376C7005D33 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34921DCB75B4A7C83AFF5BAA0AE3B083 /* YSRadarView.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YSRadarView/YSRadarView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YSRadarView/YSRadarView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YSRadarView/YSRadarView.modulemap";
-				PRODUCT_MODULE_NAME = YSRadarView;
-				PRODUCT_NAME = YSRadarView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -601,6 +631,23 @@
 			};
 			name = Debug;
 		};
+		70AA9E410EB69F47FBA26B2740EB630D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3146B540E0AC0EA62F706AAE97E845F0 /* YSRadarView.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/YSRadarView";
+				IBSC_MODULE = YSRadarView;
+				INFOPLIST_FILE = "Target Support Files/YSRadarView/ResourceBundle-YSRadarView-YSRadarView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = YSRadarView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		73E74FA937B51D49CEF087AB8E3A5AF6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ED9834F8450F864D07A5234A7706FFE5 /* Pods-YSRadarView_Example.release.xcconfig */;
@@ -636,9 +683,9 @@
 			};
 			name = Release;
 		};
-		879478044B35B148226B5F2EF2985B69 /* Debug */ = {
+		7CEBF0DF499E26EE111109902B95AC85 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B0814FB4FFC31FB0BE653C749AE77E6 /* YSRadarView.debug.xcconfig */;
+			baseConfigurationReference = 5BA82F1E21F6CDC5C32F1A63D1691AA4 /* YSRadarView.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -663,10 +710,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		A3231826D9379183C0C70EE29FD7CB91 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -701,6 +749,55 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		B4A2262ECB26DE431AC1DDEC562B6229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3146B540E0AC0EA62F706AAE97E845F0 /* YSRadarView.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YSRadarView/YSRadarView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YSRadarView/YSRadarView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YSRadarView/YSRadarView.modulemap";
+				PRODUCT_MODULE_NAME = YSRadarView;
+				PRODUCT_NAME = YSRadarView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BEB2138E1B9C75DE43E8E4F406A1C557 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BA82F1E21F6CDC5C32F1A63D1691AA4 /* YSRadarView.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/YSRadarView";
+				IBSC_MODULE = YSRadarView;
+				INFOPLIST_FILE = "Target Support Files/YSRadarView/ResourceBundle-YSRadarView-YSRadarView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = YSRadarView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
 		};
 		D7D14EF4D502BD95C4A6DDF15ED4CDF3 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -749,6 +846,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		57EC645783EA26CE003FFE9D0F390F96 /* Build configuration list for PBXNativeTarget "YSRadarView-YSRadarView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70AA9E410EB69F47FBA26B2740EB630D /* Debug */,
+				BEB2138E1B9C75DE43E8E4F406A1C557 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6C1D24C7E5EA2A7FFAD1973414F12958 /* Build configuration list for PBXNativeTarget "Pods-YSRadarView_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -767,11 +873,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		81FD137FA76E981FBE0367300EA8E7FF /* Build configuration list for PBXNativeTarget "YSRadarView" */ = {
+		81455B93648C11098571654311D1B61A /* Build configuration list for PBXNativeTarget "YSRadarView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				879478044B35B148226B5F2EF2985B69 /* Debug */,
-				1480A4AB6AA0E2EAC7127376C7005D33 /* Release */,
+				B4A2262ECB26DE431AC1DDEC562B6229 /* Debug */,
+				7CEBF0DF499E26EE111109902B95AC85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
